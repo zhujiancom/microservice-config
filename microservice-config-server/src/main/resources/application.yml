@@ -2,8 +2,9 @@ server:
   port: 8080
 spring:
   cloud:
-    server:
-      git:
-        uri: https://github.com/zhujiancom/microservice-config-repo
-        username: zhujiancom
-        password: zhujian@871025
+    config:
+      server:
+        git:
+          uri: https://github.com/zhujiancom/microservice-config-repo
+  application:
+    name: microservice-config-server
