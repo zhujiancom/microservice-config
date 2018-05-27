@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhujiancom/microservice-config-repo
+  application:
+    name: microservice-config-encrypt-server
+encrypt:
+  key: foobar

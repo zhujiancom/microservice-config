@@ -1,0 +1,9 @@
+#spring boot 先加载bootstrap.* -> 链接config server ,加载远程配置 -> 读取远程配置
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8080
+      profile: dev
+      label: master  #当configserver后端存储是git时，默认是master
+  application:
+    name: foobar
